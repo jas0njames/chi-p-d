@@ -4,36 +4,35 @@ if(!isset($_POST['submit']))
   //This page should not be accessed directly. Need to submit the form.
   echo "error; you need to submit the form!";
 }
-$companyname = $_POST['CompanyName'];
-$companytwitter = $_POST['CompanyTwitter'];
-$companyurl = $_POST['CompanyURL'];
-$postername = $_POST['JobPosterName'];
-$posteremail = $_POST['JobPosterEmail'];
-$jobtitle = $_POST['JobTitle'];
-$jobdescript = $_POST['JobDescription'];
-$typeofjob = $_POST['typeofjob'];
+$first = $_POST['FirstName'];
+$last = $_POST['LastName'];
+$email = $_POST['Email'];
+$work = $_POST['Work'];
+$workurl = $_POST['WorkURL'];
+$portfolio = $_POST['PortfolioURL'];
+$twitter = $_POST['TwitterURL'];
 
 //Validate first
-if(empty($companyname)||empty($posteremail))
+if(empty($email)||empty($portfolio))
 {
-    echo "Company name and email are mandatory!";
+    echo "Email and portfolio are mandatory!";
     exit;
 }
 
-if(IsInjected($posteremail))
+if(IsInjected($email))
 {
     echo "Bad email value!";
     exit;
 }
 
-$email_from = 'jobs@chi-p-d.com';
-$email_subject = "New ChiPD Job Post";
-$email_body = "You have received a new message from $postername at $posteremail. \n".
-    "Here are the details:\n $companyname \n $companytwitter \n $companyurl \n $postername \n $posteremail \n $jobtitle \n $jobdescript \n $typeofjob ";
+$email_from = 'apply@chi-p-d.com';
+$email_subject = "New ChiPD Applicant";
+$email_body = "You have received a new message from $first $last at $email. \n".
+    "Here are the details:\n $first \n $last \n $email \n $work \n $workurl \n $portfolio \n $twitter ";
 
 $to = "jasonjamespetersen@gmail.com";
 $headers = "From: $email_from \r\n";
-$headers .= "Reply-To: $postername \r\n";
+$headers .= "Reply-To: $email \r\n";
 //Send the email!
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to success page.

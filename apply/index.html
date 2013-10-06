@@ -19,6 +19,24 @@
 		</ul>
 	</div>
 	<div id="content">
+		<h2 class="form-title">Apply to Join ChiPD</h2>
+		<form action="/apply/mail.php" method="post">
+			<label>First Name &#42;</label>
+			<input name="FirstName" type="text" autocapitalize="on" autocorrect="off" autocomplete="on" size="25" maxlength="100" required="required">
+			<label>Last Name &#42;</label>
+			<input name="LastName" type="text" autocapitalize="on" autocorrect="off" autocomplete="on" size="25" maxlength="100" required="required">
+			<label>Email Address &#42;<br><span>(This will not be published.)</span></label>
+			<input name="Email" type="email" autocapitalize="off" autocorrect="off" autocomplete="on" size="25" maxlength="100" required="required">
+			<label>Where Do You Work? &#42;</label>
+			<input name="Work" type="text" autocapitalize="on" autocorrect="off" autocomplete="on" size="25" maxlength="100" required="required">
+			<label>Company URL &#42;</label>
+			<input name="WorkURL" type="url" autocapitalize="off" autocorrect="off" autocomplete="on" size="25" maxlength="100" required="required" value="http://www.">
+			<label>Your Portfolio URL &#42;</label>
+			<input name="PortfolioURL" type="url" autocapitalize="off" autocorrect="off" autocomplete="on" size="25" maxlength="100" required="required" value="http://www.">
+			<label>Your Twitter URL &#42;</label>
+			<input name="TwitterURL" type="url" autocapitalize="off" autocorrect="off" autocomplete="on" size="25" maxlength="100" required="required" value="http://twitter.com/">
+			<input type="submit" class="submit" name="submit" value="Submit">
+		</form>
 		<p class="about">ChiPD is a list of the product designers working in Chicago. If you'd like to be added to this list, click <a href="/apply">here to apply</a>. For more info, please hit us up at <a href="mailto:911@chi-p-d.com?">911@chi-p-d.com</a>.</p>
 		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://chi-p-d.com" data-text="ChiPD Chicago's Finest">Tweet</a>
 		<a href="https://twitter.com/chi_p_d" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @chi_p_d</a>

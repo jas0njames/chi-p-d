@@ -5,9 +5,9 @@
 /*------------------------------------*\
   VARIABLES
 \*------------------------------------*/
-@grey: #999;
-@red: #f64949;
-@blue: #ddf2fb;
+@grey: #888;
+@red: #103557;
+@blue: #103557;
 
 body {
 	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -15,6 +15,7 @@ body {
 	line-height: 24px;
 	color: @grey;
 	text-rendering: optimizeLegibility;
+	min-width: 1080px;
 }
 .clearfix:after {
   content: ".";
@@ -47,11 +48,12 @@ a{
 h1{
 	font-size: 48px;
 	line-height: 48px;
-	color: #f64949;
+	color: white;
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
 	float: left;
 	text-decoration: none;
+	a { color: white; }
 	a:hover {
 		text-decoration: none;
 	}
@@ -88,13 +90,13 @@ h2 {
 		}
  	}
  	a {
-		color: @red;
+		color: white;
 		text-decoration: none;
 		&:hover {
 			text-decoration: none;
 		}
 		&:active {
-			color: @red;
+			color: white;
 		}
 	}
 }
@@ -128,14 +130,27 @@ h2 {
 		div {
 			float: left;
 			margin-left: 15px;
+			span {
+				font-weight: bold;
+			}
 		}
 	}
-	p.about {
-		margin: 70px 0;
+	p{
 		max-width: 480px;
-		a {
+		margin: 30px 0;
+		&.nomarg{
+			margin: 0;
+		}
+		&.about{
+			margin: 70px 0;
+		}
+		a{
 			text-decoration: underline;
 		}
+	}
+	h2.form-title {
+		margin: 70px 0 20px 0;
+		color: @red;
 	}
 }
 
@@ -193,5 +208,50 @@ h2 {
 #footer{
 	margin-top: 150px;
 	height: 400px;
-	background-color: #ddf2fb;
+	background-color: @blue;
 	}
+
+/*******************************************************/
+/* Forms */
+/*******************************************************/
+form {
+	padding-bottom: 100px;
+	color: @red;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  span{
+		font-weight: normal;
+		font-style: italic;
+	}
+}
+input{
+  display: block;
+  margin-bottom: 20px;
+	min-width: 320px;
+	font-size: 16px;
+	line-height: 16px;
+	padding: 8px 6px;
+	color: #777;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	border: 1px @red solid;
+  &.radio{
+		display: inline;
+		margin-bottom: 6px;
+		margin-right: 10px;
+	}
+	&.submit{
+		margin-top: 40px;
+		background: @red;
+		color: white;
+		font-weight: bold;
+		border: none;
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		border-radius: 100px;
+		padding: 16px 0px;
+		font-size: 18px;
+	}
+}
