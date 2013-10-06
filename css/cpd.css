@@ -4,6 +4,7 @@
 /*------------------------------------*\
   VARIABLES
 \*------------------------------------*/
+/* line 12, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 body {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
@@ -11,6 +12,7 @@ body {
   color: #999999;
   text-rendering: optimizeLegibility;
 }
+/* line 19, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 .clearfix:after {
   content: ".";
   display: block;
@@ -18,25 +20,30 @@ body {
   clear: both;
   visibility: hidden;
 }
+/* line 26, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 a {
   text-decoration: none;
   color: #f64949;
 }
+/* line 29, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 a:hover {
   text-decoration: underline;
 }
+/* line 32, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 a:active {
   color: #f64949;
 }
 /*******************************************************/
 /* Header & Navigation */
 /*******************************************************/
+/* line 41, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 .header {
   display: block;
   margin: 0 auto;
-  padding: 75px 70px 70px 70px;
+  padding: 55px 70px 70px 70px;
   background: #ddf2fb;
 }
+/* line 47, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 h1 {
   font-size: 48px;
   line-height: 48px;
@@ -46,29 +53,35 @@ h1 {
   float: left;
   text-decoration: none;
 }
-h1:hover {
+/* line 55, /Users/jasonjames/Sites/chi-p-d/cpd.less */
+h1 a:hover {
   text-decoration: none;
 }
+/* line 59, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 h2 {
   line-height: 28px;
   font-size: 24px;
   font-weight: bold;
 }
+/* line 64, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #nav {
   float: right;
   clear: right;
   padding-top: 11px;
   font-weight: bold;
 }
+/* line 69, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #nav li {
   float: left;
   margin-left: 10px;
   padding-left: 10px;
   margin-bottom: 0;
 }
+/* line 74, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #nav li:first-child {
   border-left: none;
 }
+/* line 77, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #nav li #apply {
   background: white;
   color: #f64949;
@@ -77,30 +90,37 @@ h2 {
   -moz-border-radius: 100px;
   border-radius: 100px;
 }
+/* line 84, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #nav li #apply:active {
   background: #f64949;
   color: white;
 }
+/* line 90, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #nav a {
   color: #f64949;
   text-decoration: none;
 }
+/* line 93, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #nav a:hover {
   text-decoration: none;
 }
+/* line 96, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #nav a:active {
   color: #f64949;
 }
 /*******************************************************/
 /* Designers */
 /*******************************************************/
+/* line 106, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #content {
   margin: 0 auto;
   padding: 0 70px;
 }
+/* line 109, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #content ul {
   margin-top: 70px;
 }
+/* line 112, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #content li {
   margin-bottom: 30px;
   width: 360px;
@@ -109,40 +129,50 @@ h2 {
   padding-bottom: 30px;
   display: inline-block;
 }
+/* line 119, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #content li a {
   color: #999999;
 }
+/* line 122, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #content li h2 a {
   color: #f64949;
 }
+/* line 125, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #content li img {
   float: left;
 }
+/* line 128, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #content li div {
   float: left;
   margin-left: 15px;
 }
+/* line 133, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #content p.about {
   margin: 70px 0;
   max-width: 480px;
 }
+/* line 136, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #content p.about a {
   text-decoration: underline;
 }
 /*******************************************************/
 /* Opportunities */
 /*******************************************************/
+/* line 146, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #content ul.jobs {
   float: left;
   margin-top: 0px;
 }
+/* line 150, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #content li.opps {
   display: block;
   width: 480px;
 }
+/* line 153, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #content li.opps:last-child {
   margin-bottom: 100px;
 }
+/* line 157, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 .post_position {
   float: right;
   width: 300px;
@@ -150,11 +180,13 @@ h2 {
   padding: 30px 32px;
   text-align: center;
 }
+/* line 163, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 .post_position h4 {
   color: #222;
   font-weight: bold;
   margin-bottom: 6px;
 }
+/* line 169, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 .btn_post {
   background-color: #f64949;
   color: white;
@@ -167,9 +199,11 @@ h2 {
   margin-top: 15px;
   text-align: center;
 }
+/* line 180, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 .btn_post .free {
   font-weight: normal;
 }
+/* line 183, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 .btn_post:active {
   background: #f64949;
   color: white;
@@ -177,8 +211,15 @@ h2 {
 /*******************************************************/
 /* Footer */
 /*******************************************************/
+/* line 193, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 #footer {
   margin-top: 150px;
   height: 400px;
   background-color: #ddf2fb;
+}
+/*******************************************************/
+/* Forms */
+/*******************************************************/
+label, input {
+  display: block;
 }
