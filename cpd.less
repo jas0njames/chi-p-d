@@ -1,0 +1,197 @@
+/*******************************************************/
+/* CPD */
+/*******************************************************/
+
+/*------------------------------------*\
+  VARIABLES
+\*------------------------------------*/
+@grey: #999;
+@red: #f64949;
+@blue: #ddf2fb;
+
+body {
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: @grey;
+	text-rendering: optimizeLegibility;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+a{
+	text-decoration: none;
+	color:@red;
+	&:hover {
+		text-decoration: underline;
+	}
+	&:active {
+		color: @red;
+	}
+}
+
+/*******************************************************/
+/* Header & Navigation */
+/*******************************************************/
+
+.header {
+	display: block;
+	margin: 0 auto;
+	padding: 75px 70px 70px 70px;
+	background: @blue;
+}
+h1{
+	font-size: 48px;
+	line-height: 48px;
+	color: #f64949;
+	font-weight: bold;
+	text-rendering: optimizeLegibility;
+	float: left;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+h2 {
+	line-height: 28px;
+	font-size: 24px;
+	font-weight: bold;
+}
+#nav {
+	float: right;
+ 	clear: right;
+ 	padding-top: 11px;
+ 	font-weight: bold;
+ 	li {
+	 	float: left;
+		margin-left: 10px;
+		padding-left: 10px;
+		margin-bottom: 0;
+		&:first-child{
+			border-left: none;
+		}
+		#apply {
+			background: white;
+			color: @red;
+			padding: 8px 20px 11px;
+			-webkit-border-radius: 100px;
+			-moz-border-radius: 100px;
+			border-radius: 100px;
+			&:active {
+				background: @red;
+				color: white;
+			}
+		}
+ 	}
+ 	a {
+		color: @red;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+		&:active {
+			color: @red;
+		}
+	}
+}
+
+/*******************************************************/
+/* Designers */
+/*******************************************************/
+
+#content {
+	margin: 0 auto;
+	padding: 0 70px;
+	ul {
+		margin-top: 70px;
+	}
+	li {
+		margin-bottom: 30px;
+		width: 360px;
+		margin-right: 70px;
+		border-bottom: 1px solid #DDD;
+		padding-bottom: 30px;
+		display: inline-block;
+		a {
+			color: @grey;
+		}
+		h2 a {
+			color: @red;
+		}
+		img {
+			float: left;
+		}
+		div {
+			float: left;
+			margin-left: 15px;
+		}
+	}
+	p.about {
+		margin: 70px 0;
+		max-width: 480px;
+		a {
+			text-decoration: underline;
+		}
+	}
+}
+
+/*******************************************************/
+/* Opportunities */
+/*******************************************************/
+
+#content ul.jobs {
+	float: left;
+	margin-top: 0px;
+}
+#content li.opps {
+	display: block;
+	width: 480px;
+	&:last-child {
+		margin-bottom: 100px;
+	}
+}
+.post_position{
+	float: right;
+	width: 300px;
+	background: #f5f5f5;
+	padding: 30px 32px;
+	text-align: center;
+	h4 {
+		color: #222;
+		font-weight: bold;
+		margin-bottom: 6px;
+	}
+}
+.btn_post{
+	background-color: @red;
+	color: white;
+	padding: 8px 25px 11px;
+	font-weight: bold;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	display: inline-block;
+	margin-top: 15px;
+	text-align: center;
+	.free {
+		font-weight: normal;
+	}
+	&:active{
+		background: @red;
+		color: white;
+	}
+}
+
+/*******************************************************/
+/* Footer */
+/*******************************************************/
+
+#footer{
+	margin-top: 150px;
+	height: 400px;
+	background-color: #ddf2fb;
+	}
