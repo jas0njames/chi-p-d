@@ -129,7 +129,7 @@ h2 {
 #content li {
   margin-bottom: 30px;
   width: 360px;
-  margin-right: 70px;
+  margin-right: 60px;
   border-bottom: 1px solid #DDD;
   padding-bottom: 30px;
   display: inline-block;
@@ -269,14 +269,15 @@ input {
   color: #777;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   border: 1px #103557 solid;
+  -webkit-appearance: none;
 }
-/* line 240, /Users/jasonjames/Sites/chi-p-d/cpd.less */
+/* line 241, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 input.radio {
   display: inline;
   margin-bottom: 6px;
   margin-right: 10px;
 }
-/* line 245, /Users/jasonjames/Sites/chi-p-d/cpd.less */
+/* line 246, /Users/jasonjames/Sites/chi-p-d/cpd.less */
 input.submit {
   margin-top: 40px;
   background: #103557;

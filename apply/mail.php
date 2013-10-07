@@ -30,7 +30,7 @@ $email_subject = "New ChiPD Applicant";
 $email_body = "You have received a new message from $first $last at $email. \n".
     "Here are the details:\n $first \n $last \n $email \n $work \n $workurl \n $portfolio \n $twitter ";
 
-$to = "jasonjamespetersen@gmail.com";
+$to = "jason@chi-p-d.com";
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $email \r\n";
 //Send the email!

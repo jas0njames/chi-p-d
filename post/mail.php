@@ -31,9 +31,9 @@ $email_subject = "New ChiPD Job Post";
 $email_body = "You have received a new message from $postername at $posteremail. \n".
     "Here are the details:\n $companyname \n $companytwitter \n $companyurl \n $postername \n $posteremail \n $jobtitle \n $jobdescript \n $typeofjob ";
 
-$to = "jasonjamespetersen@gmail.com";
+$to = "jason@chi-p-d.com";
 $headers = "From: $email_from \r\n";
-$headers .= "Reply-To: $postername \r\n";
+$headers .= "Reply-To: $posteremail \r\n";
 //Send the email!
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to success page.
