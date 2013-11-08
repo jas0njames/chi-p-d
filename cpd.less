@@ -6,7 +6,6 @@
   VARIABLES
 \*------------------------------------*/
 @grey: #888;
-@red: #103557;
 @blue: #103557;
 
 body{
@@ -25,12 +24,12 @@ body{
 }
 a{
 	text-decoration: none;
-	color:@red;
+	color:@blue;
 	&:hover {
 		text-decoration: underline;
 	}
 	&:active {
-		color: @red;
+		color: @blue;
 	}
 }
 
@@ -61,6 +60,15 @@ h2 {
 	line-height: 28px;
 	font-size: 24px;
 	font-weight: bold;
+	text-transform: capitalize;
+}
+h3 {
+	line-height: 1.35em;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 70px;
+	color: @blue;
+	text-transform: capitalize;
 }
 #nav {
 	float: right;
@@ -77,13 +85,13 @@ h2 {
 		}
 		#apply {
 			background: white;
-			color: @red;
+			color: @blue;
 			padding: 8px 20px 11px;
 			-webkit-border-radius: 100px;
 			-moz-border-radius: 100px;
 			border-radius: 100px;
 			&:active {
-				background: @red;
+				background: @blue;
 				color: white;
 			}
 		}
@@ -109,6 +117,7 @@ h2 {
 	padding: 0 70px;
 	ul {
 		margin-top: 70px;
+		&.resources{ margin-top: 35px; }
 	}
 	li {
 		margin-bottom: 30px;
@@ -117,11 +126,12 @@ h2 {
 		border-bottom: 1px solid #DDD;
 		padding-bottom: 30px;
 		display: inline-block;
+		&.resource { width: 540px; }
 		a {
 			color: @grey;
 		}
 		h2 a {
-			color: @red;
+			color: @blue;
 		}
 		img {
 			float: left;
@@ -149,7 +159,7 @@ h2 {
 	}
 	h2.form-title {
 		margin: 70px 0 20px 0;
-		color: @red;
+		color: @blue;
 	}
 }
 
@@ -181,7 +191,7 @@ h2 {
 	}
 }
 .btn_post{
-	background-color: @red;
+	background-color: @blue;
 	color: white;
 	padding: 8px 25px 11px;
 	font-weight: bold;
@@ -195,7 +205,7 @@ h2 {
 		font-weight: normal;
 	}
 	&:active{
-		background: @red;
+		background: @blue;
 		color: white;
 	}
 }
@@ -215,7 +225,7 @@ h2 {
 /*******************************************************/
 form {
 	padding-bottom: 100px;
-	color: @red;
+	color: @blue;
 }
 label {
   display: block;
@@ -235,7 +245,7 @@ input{
 	padding: 8px 6px;
 	color: #777;
 	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-	border: 1px @red solid;
+	border: 1px @blue solid;
 	-webkit-appearance: none;
   &.radio{
 		display: inline;
@@ -244,7 +254,7 @@ input{
 	}
 	&.submit{
 		margin-top: 40px;
-		background: @red;
+		background: @blue;
 		color: white;
 		font-weight: bold;
 		border: none;
