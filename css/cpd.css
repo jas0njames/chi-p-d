@@ -60,7 +60,7 @@ h2 {
 }
 h3 {
   line-height: 1.35em;
-  font-size: 18px;
+  font-size: 48px;
   font-weight: bold;
   margin-top: 70px;
   color: #103557;
@@ -114,7 +114,7 @@ h3 {
   margin-top: 70px;
 }
 #content ul.resources {
-  margin-top: 35px;
+  margin-top: 45px;
 }
 #content li {
   margin-bottom: 30px;
@@ -262,6 +262,10 @@ input.submit {
 /* Tablet */
 /*******************************************************/
 @media handheld, only screen and (max-width: 1050px) {
+  #nav li {
+    margin-left: 0;
+    padding-left: 15px;
+  }
   #content ul.jobs {
     float: none;
   }
@@ -294,7 +298,6 @@ input.submit {
     float: left;
   }
   #nav li {
-    margin-left: 0;
     padding-left: 0;
     padding-right: 15px;
     line-height: 40px;
@@ -307,13 +310,30 @@ input.submit {
   }
   #content h2 {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 1.2em;
   }
   #content h2.form-title {
     margin-top: 30px;
   }
+  #content h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
   #content ul {
     margin-top: 30px;
+  }
+  #content ul.resources {
+    margin-top: 20px;
+  }
+  #content ul.resources li {
+    width: 280px;
+  }
+  #content ul.resources li img {
+    display: none;
+  }
+  #content ul.resources li div {
+    margin-left: 0;
   }
   #content ul.jobs img {
     display: none;

@@ -64,7 +64,7 @@ h2 {
 }
 h3 {
 	line-height: 1.35em;
-	font-size: 18px;
+	font-size: 48px;
 	font-weight: bold;
 	margin-top: 70px;
 	color: @blue;
@@ -117,7 +117,7 @@ h3 {
 	padding: 0 70px;
 	ul {
 		margin-top: 70px;
-		&.resources{ margin-top: 35px; }
+		&.resources{ margin-top: 45px; }
 	}
 	li {
 		margin-bottom: 30px;
@@ -270,6 +270,12 @@ input{
 /* Tablet */
 /*******************************************************/
 @media handheld, only screen and (max-width: 1050px) {
+	#nav {
+		li{
+			margin-left: 0;
+			padding-left: 15px;
+		}
+	}
 	#content{
 		ul{
 			&.jobs{
@@ -306,7 +312,6 @@ input{
 	#nav{
 		float: left;
 		li{
-			margin-left: 0;
 			padding-left: 0;
 			padding-right: 15px;
 			line-height: 40px;
@@ -319,13 +324,27 @@ input{
 		padding: 0 20px;
 		h2{
 			font-size: 20px;
-			line-height: 20px;
+			line-height: 1.2em;
 			&.form-title {
 				margin-top: 30px;
 			}
 		}
+		h3 {
+			font-size: 16px;
+			text-transform: uppercase;
+			margin-top: 40px;
+		}
 		ul {
 			margin-top: 30px;
+			&.resources { margin-top: 20px; 
+				li {
+					width: 280px;
+					img { display: none; }
+					div { 
+						margin-left: 0;
+					}
+				}
+			}
 			&.jobs{
 				img {
 					display: none;
