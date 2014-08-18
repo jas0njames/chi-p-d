@@ -1,4 +1,0 @@
-[15-Nov-2013 21:17:52 America/Los_Angeles] PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Could not execute mail delivery program '/usr/sbin/sendmail -t -i' in /home/chipdcom/public_html/apply/mail.php on line 37
-[15-Nov-2013 21:17:52 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/chipdcom/public_html/apply/mail.php:37) in /home/chipdcom/public_html/apply/mail.php on line 39
-[15-Nov-2013 21:18:07 America/Los_Angeles] PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Could not execute mail delivery program '/usr/sbin/sendmail -t -i' in /home/chipdcom/public_html/apply/mail.php on line 37
-[15-Nov-2013 21:18:07 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/chipdcom/public_html/apply/mail.php:37) in /home/chipdcom/public_html/apply/mail.php on line 39

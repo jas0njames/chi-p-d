@@ -31,7 +31,7 @@ $email_subject = "New ChiPD Job Post";
 $email_body = "You have received a new message from $postername at $posteremail. \n".
     "Here are the details:\n $companyname \n $companytwitter \n $companyurl \n $postername \n $posteremail \n $jobtitle \n $jobdescript \n $typeofjob ";
 
-$to = "jason@chi-p-d.com";
+$to = "victoria@chi-p-d.com";
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $posteremail \r\n";
 //Send the email!
